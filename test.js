@@ -18,6 +18,7 @@ test("One euro should be 1.206 dollars", function(){
     // function with argument 3.5(euros)
     const dollars = fromEuroToDollar(3.5)
     // 3.5 euros = (3.5*1.2) = 4.2 dollars
+    // comparison for unit test
      expect(dollars).toBe(Number((3.5*1.2).toFixed(2))); 
 });
 
@@ -28,6 +29,7 @@ test("One dollar should be (127.9/1.2) yen", function () {
     // function with argument 7(dollar)
     const yen = fromDollarToYen(7)
     // 7 dollars = (127.9*7)/1.2 yen = approx 746.08 yen
+    //compariston for unit test
     expect(yen).toBe(746.08);
 });
 
