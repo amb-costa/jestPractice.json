@@ -28,7 +28,7 @@ test("One dollar should be (127.9/1.2) yen", function () {
     // function with argument 7(dollar)
     const yen = fromDollarToYen(7)
     // 7 dollars = (127.9*7)/1.2 yen = approx 746.08 yen
-    expect(yen).toBe(Number(((127.9*7)/1.2).toFixed(2)));
+    expect(yen).toBe(746.08);
 });
 
 // test for conversion yen => pound sterling
@@ -39,5 +39,5 @@ test("One yen should be (0.8/127.9) pound sterling", function () {
     const pound = fromYenToPound(30)
     // 30 yen = (0.8*30)/127.9 pound sterling = approx 0.19 pound sterling 
     // comparison for unit test
-    expect(pound).toBe(Number(((0.8*30)/127.9).toFixed(2)));
+    expect(pound).toBe(0.19);
 });
